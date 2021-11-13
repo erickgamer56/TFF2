@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortinite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header>
+        <h3>opá voce esta em celular, pfv use um PC / COMPUTADOR</h3>
+    </header>
+    <div class="load" id="load">
+        <div class="tit">
+             <h1>FORTINITE</h1>
+        </div>
+        <div id="bar">
+            <div id="car"><h4 id="escreve"></h4></div>
+        </div>
+    </div>
+    <main>
+        <div class="online"><h1 id="escreva">OFFLINE</h1></div>
+        <div class="box">
+            <div class="title">
+                <h1>CREDITOS</h1>
+            </div>
+            <div class="btns">
+                <a href="creditos.html"><input type="button" value="ENTRAR" class="play"></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                <h1 id="at">Battle Royale</h1>
+            </div>
+            <div class="btns">
+                <a href="#"><input type="button" value="JOGAR" class="play"></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                <h1>EQUIPE</h1>
+            </div>
+            <div class="btns">
+                <a href="equipe.html"><input type="button" value="ENTRAR" class="play"></a>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener("load",function(){
+            var n1 = 0
+            setInterval(() => {
+                n1++
+                document.getElementById("car").style.width=n1 +"%"
+                document.getElementById("escreve").innerHTML=n1+"%"
+                if (n1 >= 100){
+                    n1 = 99
+                }
+            }, 28);
+            setTimeout(() => {
+                document.getElementById("load").style.opacity="0"
+            }, 3000);
+            setTimeout(() => {
+                document.getElementById("load").style.zIndex="-5"
+            }, 4000);
+        })
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

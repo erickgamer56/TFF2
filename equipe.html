@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUIPE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h3>opá voce esta em celular, pfv use um PC / COMPUTADOR com 1365x767 ou superior</h3>
+    </header>
+    <div class="load" id="load">
+        <div class="tit">
+             <h1>FORTINITE</h1>
+        </div>
+        <div class="node">
+            <div class="spiner"></div>
+            <div class="spiner1"></div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menud">
+            <ul>
+                <li><a href="creditos.html" class="out">CREDITOS</a></li>
+                <li><a href="index.html" class="out">INICIO</a></li>
+                <li><a href="#" class="out active">EQUIPE</a></li>
+            </ul>
+        </div>
+    </div>
+    <main style="overflow: hidden;" class="main">
+        <div class="box n" id="n1">
+            <div class="black">
+                <h1>Organizador do evento</h1>
+                <p>Estuda no Segundo logistica,trabalha com design</p>
+            </div>
+            <div class="title">
+                <h1>Lucas G</h1>
+            </div>
+            <div class="btns">
+                <a href="#"><input type="button" value="VER" class="play"></a>
+            </div>
+        </div>
+        <div class="box n" id="n2">
+            <div class="black">
+                <h1>Organizador do evento</h1>
+                <p>Estuda no Segundo logistica e trabalha com Front-End.</p>
+            </div>
+            <div class="title">
+                <h1 id="at">Erick N</h1>
+            </div>
+            <div class="btns">
+                <a href="#"><input type="button" value="VER" class="play"></a>
+            </div>
+        </div>
+        <div class="box n" id="n3">
+            <div class="black">
+                <h1>Organizador do evento</h1>
+                <p>Estuda no Segundo logistica e trabalha com Back-End.</p>
+            </div>
+            <div class="title">
+                <h1>Eduardo M</h1>
+            </div>
+            <div class="btns">
+                <a href="membros.html"><input type="button" value="VER" class="play"></a>
+            </div>
+        </div>
+        <div class="box n" id="n4">
+            <div class="black">
+                <h1>Organizador do evento</h1>
+                <p>Estuda no Segundo logistica e trabalha como ajudante.</p>
+            </div>
+            <div class="title">
+                <h1>Alysson L</h1>
+            </div>
+            <div class="btns">
+                <a href="membros.html"><input type="button" value="VER" class="play"></a>
+            </div>
+        </div>
+    </main>
+    <script>
+                window.addEventListener("load",function(){
+            document.getElementById("load").style.opacity="0"
+            setTimeout(() => {
+                document.getElementById("load").style.zIndex="-1"
+            }, 1000);
+        })
+        if (navigator.onLine){
+            var audio = new Audio('../img/audio.mp3');
+            audio.currentTime=3
+            audio.play();
+            if (audio.currentTime >= 100){
+            audio.currentTime=0
+        }
+        }
+        window.addEventListener("load",function(){
+            document.getElementById("menu").style.transform="translate(0,0)"
+            document.getElementById("menu").style.opacity="1"
+            document.getElementById("n1").style.transform="translate(0,0)"
+            document.getElementById("n2").style.transform="translate(0,0)"
+            document.getElementById("n3").style.transform="translate(0,0)"
+            document.getElementById("n4").style.transform="translate(0,0)"
+        })
+    </script>
+</body>
+</html>

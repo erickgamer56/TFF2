@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+body{
+    background-color: #09d2e1;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.box{
+    width: 360px;
+    height:447px ;
+    background-color: black;
+    border: 5px solid cyan;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: height .6s ease,border .6s ease,transform .6s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    overflow: hidden;
+}
+.box:hover{
+    height: 560px;
+    border: 5px solid rgb(255, 255, 255);
+}
+.box:hover .play{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+.btns{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+.play{
+    width: 200px;
+    height: 55px;
+    background-color: yellow;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity .3s ease, transform .3s ease;
+    transform: translateY(-40px);
+    cursor: pointer;
+}
+.box:hover .title{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.title{
+    margin-top: 70px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.title h1{
+    font-family: "Burbank Big Condensed";
+    font-size: 70px;
+    color: white;
+}
+.box:nth-child(2){
+    background-image: url(../img/1.0.jpg);
+}
+.box:nth-child(3){
+    background-image: url(../img/fortnite.jpg);
+}
+.box:nth-child(4){
+    background-image: url(../img/naruto.jpg);
+}
+.text{
+    transform: translateY(-160px);
+    opacity: 0;
+    transition: transform .6s ease,opacity .6s ease;
+    
+}
+.text h1, p{
+    font-family:"Burbank Big Condensed" ;
+    color: white;
+}
+.text h1{
+    font-size: 100px;
+}
+.text p{
+    font-size: 40px;
+    max-width: 700px;
+    text-align: justify;
+}
+.img{
+    height: 500px;
+    width: 530px;
+    transform: translateX(160px);
+    transition: transform .6s ease,opacity .6s ease;
+    opacity: 0;
+}
+.play1{
+    width: 200px;
+    height: 55px;
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.load{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #09d2e1;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.spiner{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 16px solid rgba(92, 0, 0, 0);
+    border-top: 16px solid white;
+    animation: roda .6s ease infinite;
+    position: absolute;
+}
+.spiner1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 16px solid rgba(92, 0, 0, 0);
+    border-left: 16px solid white;
+    animation: roda 1s ease infinite;
+    position: absolute;
+}
+.node{
+    width: 60px;
+    height: 60px;
+}
+@keyframes roda{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.tit h1{
+    font-family:"Burbank Big Condensed" ;
+    color: white;
+    font-size: 200px;
+}
+.online{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    margin-top: 5px;
+}
+.online h1{
+    font-family:"Burbank Big Condensed" ;
+    color: white;
+}
+.n:nth-child(1){
+    background-image: url(../img/lucas.jpg);
+}
+.n:nth-child(2){
+    background-image: url(../img/erick.png);
+    background-size: cover;
+}
+.n:nth-child(3){
+    background-image: url(../img/eduardo.jpg);
+}
+.n:nth-child(4){
+    background-image: url(../img/alysson.jpg);
+}
+.n:hover .black{
+    left: 0;
+    opacity: 1;
+}
+.n{
+    width: 300px;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition: left .6s ease, opacity .6s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    opacity: 0;
+}
+.black h1{
+    color: white;
+    font-family:"Burbank Big Condensed" ;
+    margin-top: 150px;
+    font-size: 25px;
+}
+.black p{
+    font-size: 18px;
+    text-align: center;
+    max-width: 300px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: 20px;
+    transition: opacity .6s ease, transform .6s ease;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.menud{
+    margin-right: 30px;
+}
+.menud ul{
+    display: flex;
+}
+.menud li{
+    list-style-type: none;
+}
+.out{
+    color: white;
+    font-family: fantasy;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.active{ 
+    background-color: rgba(255, 255, 255, 0.767);
+    color: black;
+}
+.n{
+    margin-top: 80px;
+}
+#n1{
+    transform: translateX(-400px);
+}
+#n2{
+    transform: translateX(-800px);
+}
+#n3{
+    transform: translateX(-1200px);
+}
+#n4{
+    transform: translateX(-2000px);
+}
+header{
+    display: none;
+}
+@media (max-width:1036px){
+main{
+    display: none;
+}
+.menu{
+    display: none;
+}
+header{
+    display: flex;
+}
+}
