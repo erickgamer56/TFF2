@@ -35,7 +35,7 @@
                 <h1 id="at">Battle Royale</h1>
             </div>
             <div class="btns">
-                <a href="#"><input type="button" value="JOGAR" class="play"></a>
+                <a href="apresentação.html"><input type="button" value="JOGAR" class="play"></a>
             </div>
         </div>
         <div class="box">
@@ -65,6 +65,17 @@
                 document.getElementById("load").style.zIndex="-5"
             }, 4000);
         })
+        setTimeout(() => {
+            if (navigator.onLine){
+            var audio = new Audio('../img/audio.mp3');
+            audio.currentTime=3
+            audio.play();
+            if (audio.currentTime >= 100){
+            audio.currentTime=0
+            document.getElementById("escreva").innerHTML='ONLINE'
+        }
+        }
+        }, 3500);
     </script>
     <script src="js/script.js"></script>
 </body>

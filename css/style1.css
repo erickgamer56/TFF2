@@ -18,3 +18,155 @@
 #car h3{
     font-family: fantasy;
 }
+.menu2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+.menu3{
+    background-color: #09d3e18c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.infos{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px ;
+    cursor: pointer;
+    user-select: none;
+}
+.infos h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box2{
+    width: 300px;
+    height: 180px;
+    background-color:rgba(0, 255, 255, 0.842);
+    margin: 5px;
+    transition: width .3s ease,height .3s ease, border .3s ease,transform 1s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.box2:nth-child(1){
+    background-image: url(../img/blatle.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box2:nth-child(2){
+    background-image: url(../img/fortnite.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box2:nth-child(3){
+    background-image: url(../img/mais1.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box3:nth-child(1){
+    background-image: url(../img/mais\ ota.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box3:nth-child(2){
+    background-image: url(../img/membros.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box3:nth-child(3){
+    background-image: url(../img/naruto.jpg);
+    background-size: cover;
+    background-position: center center;  
+}
+.box2:hover{
+    width: 310px;
+    height: 190px;
+    border: 3px solid white;
+}
+.box2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    opacity: 0;
+    transition: opacity .6s ease;
+    z-index: 1;
+}
+.box2:hover::after{
+    opacity: 1;
+}
+.box2:hover .some{
+    opacity: 1;
+}
+.some{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+.nome{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.btns3{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 32px;
+}
+.btns3 input{
+    width: 100px;
+    height: 35px;
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menud4{
+    margin-right: 0;
+}
+#b1{
+  transform: translate(-450px,-350px);
+}
+#b2{
+    transform: translate(0,-400px);
+}
+#b3{
+    transform: translate(450px,-350px);
+}
+#b4{
+    transform: translate(-450px,350px);
+}
+#b5{
+    transform: translate(0px,350px);
+}
+#b6{
+    transform: translate(400px,350px);
+}

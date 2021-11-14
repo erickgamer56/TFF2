@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body style="background-image: url(img/200.gif); background-size: cover; background-position: center center;">
+    <div class="load" id="load">
+        <div class="tit">
+             <h1>FORTINITE</h1>
+        </div>
+        <div class="node">
+            <div class="spiner"></div>
+            <div class="spiner1"></div>
+        </div>
+    </div>
+    <div class="menu menu4" id="menu" style="z-index: 3;">
+        <div class="menud menud4">
+            <ul>
+                <li><a href="creditos.html" class="out">CREDITOS</a></li>
+                <li><a href="index.html" class="out">INICIO</a></li>
+                <li><a href="#" class="out">EQUIPE</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="main1">
+        <div class="infos" id="voltar"><h1>Voltar</h1></div>
+        <div class="menu3">
+            <div class="menu2">
+                <div class="flex">
+                    <div class="box2" id="b1">
+                        <div class="some">
+                            <div class="nome">Objetivo</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2" id="b2">
+                        <div class="some">
+                            <div class="nome">Metodologia</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2" id="b3">
+                        <div class="some">
+                            <div class="nome">Justificativa</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="box2 box3" id="b4">
+                        <div class="some">
+                            <div class="nome">Apresentaçãoes</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2 box3" id="b5">
+                        <div class="some">
+                            <div class="nome">Pausas</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2 box3" id="b6">
+                        <div class="some">
+                            <div class="nome">Horarios</div>
+                            <div class="btns3">
+                                <input type="button" value="VER">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener("load",function(){
+            document.getElementById("load").style.opacity="0"
+            setTimeout(() => {
+                document.getElementById("load").style.zIndex="-1"
+            }, 1000);
+            document.getElementById("b1").style.transform="translate(0,0)"
+            document.getElementById("b2").style.transform="translate(0,0)"
+            document.getElementById("b3").style.transform="translate(0,0)"
+            document.getElementById("b4").style.transform="translate(0,0)"
+            document.getElementById("b5").style.transform="translate(0,0)"
+            document.getElementById("b6").style.transform="translate(0,0)"
+            document.getElementById("menu").style.transform="translate(0,0)"
+            document.getElementById("menu").style.opacity="1"
+            document.getElementById("n1").style.transform="translate(0,0)"
+            document.getElementById("n2").style.transform="translate(0,0)"
+            document.getElementById("n3").style.transform="translate(0,0)"
+            document.getElementById("n4").style.transform="translate(0,0)"
+        })
+        document.getElementById("voltar").addEventListener("click",function(){
+            window.location.href="index.html"
+        })
+        if (navigator.onLine){
+            var audio = new Audio('../img/audio.mp3');
+            audio.currentTime=3
+            audio.play();
+            if (audio.currentTime >= 100){
+            audio.currentTime=0
+        }}
+    </script>
+</body>
+</html>
