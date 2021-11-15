@@ -70,7 +70,7 @@
 }
 .box2:nth-child(1){
     background-image: url(../img/blatle.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;  
 }
 .box2:nth-child(2){
@@ -80,27 +80,27 @@
 }
 .box2:nth-child(3){
     background-image: url(../img/mais1.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;  
 }
 .box3:nth-child(1){
     background-image: url(../img/mais\ ota.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;  
 }
 .box3:nth-child(2){
     background-image: url(../img/membros.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;  
 }
 .box3:nth-child(3){
     background-image: url(../img/naruto.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;  
 }
 .box2:hover{
-    width: 310px;
-    height: 190px;
+    width: 350px;
+    height: 220px;
     border: 3px solid white;
 }
 .box2::after{

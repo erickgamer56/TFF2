@@ -1,0 +1,28 @@
+.aparece{
+    display: none;
+    z-index: 3;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.aparece h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.aparece p{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.fechar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 55px;
+    background-color: yellow;
+    border-top-left-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}

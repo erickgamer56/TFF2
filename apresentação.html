@@ -7,6 +7,7 @@
     <title>Apresentação</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/almentar.css">
 </head>
 <body style="background-image: url(img/200.gif); background-size: cover; background-position: center center;">
     <div class="load" id="load">
@@ -23,68 +24,98 @@
             <ul>
                 <li><a href="creditos.html" class="out">CREDITOS</a></li>
                 <li><a href="index.html" class="out">INICIO</a></li>
-                <li><a href="#" class="out">EQUIPE</a></li>
+                <li><a href="equipe.html" class="out">EQUIPE</a></li>
             </ul>
         </div>
     </div>
     <main class="main1">
-        <div class="infos" id="voltar"><h1>Voltar</h1></div>
         <div class="menu3">
             <div class="menu2">
                 <div class="flex">
                     <div class="box2" id="b1">
-                        <div class="some">
+                        <div class="aparece" id="aparece">
+                            <h1>Objeivo</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
                             <div class="nome">Objetivo</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn1">
                             </div>
                         </div>
                     </div>
                     <div class="box2" id="b2">
-                        <div class="some">
+                        <div class="aparece" id="aparece">
+                            <h1>Metodologia</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
                             <div class="nome">Metodologia</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn2">
                             </div>
                         </div>
                     </div>
                     <div class="box2" id="b3">
-                        <div class="some">
+                        <div class="aparece" id="aparece">
+                            <h1>Justificativa</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
                             <div class="nome">Justificativa</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn3">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex">
                     <div class="box2 box3" id="b4">
-                        <div class="some">
-                            <div class="nome">Apresentaçãoes</div>
+                        <div class="aparece" id="aparece">
+                            <h1>Apresentação</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
+                            <div class="nome">Apresentação</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn4">
                             </div>
                         </div>
                     </div>
                     <div class="box2 box3" id="b5">
-                        <div class="some">
-                            <div class="nome">Pausas</div>
+                        <div class="aparece" id="aparece">
+                            <h1>Horarios</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
+                            <div class="nome">Horarios</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn5">
                             </div>
                         </div>
                     </div>
                     <div class="box2 box3" id="b6">
-                        <div class="some">
-                            <div class="nome">Horarios</div>
+                        <div class="aparece" id="aparece">
+                            <h1>Pausas</h1>
+                            <p>Instigar as pessoas a mudar sua opiniao referente a o assunto games.</p>
+                            <input type="button" value="FECHAR" class="fechar" id="fe">
+                        </div>
+                        <div class="some" id="some">
+                            <div class="nome">Pausas</div>
                             <div class="btns3">
-                                <input type="button" value="VER">
+                                <input type="button" value="VER" id="btn6">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="infos" id="voltar"><h1>Voltar</h1></div>
     </main>
     <script>
         window.addEventListener("load",function(){
@@ -114,7 +145,8 @@
             audio.play();
             if (audio.currentTime >= 100){
             audio.currentTime=0
-        }}
+        } }
     </script>
+    <script src="js/box.js"></script>
 </body>
 </html>
