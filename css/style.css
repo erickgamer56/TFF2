@@ -176,6 +176,10 @@ main{
     border-radius: 50%;
     margin-left: 13px;
     border: 2px solid white;
+    display: none;
+}
+#out{
+    display: none;
 }
 .g-signin2{
     margin-right: 13px;
