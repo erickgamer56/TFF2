@@ -161,9 +161,28 @@ main{
 .online{
     position: absolute;
     top: 0;
-    right: 0;
-    margin: 30px;
-    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#nome{
+    color: white;
+}
+#foto{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 13px;
+    border: 2px solid white;
+}
+.g-signin2{
+    margin-right: 13px;
+}
+.only{
+    display: flex;
+    align-items: center;
 }
 .online h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;

@@ -7,6 +7,7 @@
     <title>Fortinite</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
+    <meta name="google-signin-client_id" content="225025604893-umgksv7jtca7r41m0ufrgmjo58sueoc7.apps.googleusercontent.com">
 </head>
 <body>
     <header>
@@ -21,7 +22,17 @@
         </div>
     </div>
     <main>
-        <div class="online"><h1 id="escreva">OFFLINE</h1></div>
+        <div class="online">
+            <div class="only">
+                <img src="" id="foto">
+             
+                <div>
+                    <h2 id="nome"></h2>
+                    <a href="#" onclick="signOut();" id="out">Sign out</a>
+                </div>
+            </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
         <div class="box">
             <div class="title">
                 <h1>CREDITOS</h1>
@@ -77,6 +88,7 @@
         }
         }, 3500);
     </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="js/script.js"></script>
 </body>
 </html>
